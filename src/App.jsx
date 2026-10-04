@@ -45,7 +45,7 @@ function App() {
 
     let res;
     try {
-      res = await fetch('${import.meta.env.VITE_API_URL}/api/analyze', {
+      res = await fetch(`${import.meta.env.VITE_API_URL}/api/analyze`, {
         method: 'POST',
         headers: {
           'Authorization': `Bearer ${token}`,
